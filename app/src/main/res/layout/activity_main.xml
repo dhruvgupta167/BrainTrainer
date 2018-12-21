@@ -67,44 +67,48 @@
         app:rowCount="2">
 
         <Button
-            android:id="@+id/option1TextView"
+            android:id="@+id/option1"
             android:layout_width="186dp"
             android:layout_height="118dp"
             android:background="@android:color/holo_purple"
             android:gravity="center"
+            android:onClick="optionChoosed"
             android:text="1"
             android:textColor="@android:color/background_dark"
             android:textSize="60sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/option2TextView"
+            android:id="@+id/option2"
             android:layout_width="186dp"
             android:layout_height="118dp"
             android:background="@android:color/holo_green_light"
             android:gravity="center"
+            android:onClick="optionChoosed"
             android:text="2"
             android:textColor="@android:color/background_dark"
             android:textSize="60sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/option3TextView"
+            android:id="@+id/option3"
             android:layout_width="186dp"
             android:layout_height="118dp"
             android:background="?android:attr/colorAccent"
             android:gravity="center"
+            android:onClick="optionChoosed"
             android:text="3"
             android:textColor="@android:color/background_dark"
             android:textSize="60sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/option4TextView"
+            android:id="@+id/option4"
             android:layout_width="186dp"
             android:layout_height="118dp"
             android:background="@android:color/holo_blue_dark"
             android:gravity="center"
+            android:onClick="optionChoosed"
             android:text="4"
             android:textColor="@android:color/background_dark"
             android:textSize="60sp"
@@ -113,7 +117,7 @@
 
     <TextView
         android:id="@+id/resultTextView"
-        android:layout_width="224dp"
+        android:layout_width="260dp"
         android:layout_height="75dp"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
