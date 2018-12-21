@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/timerTextView"
         android:layout_width="100dp"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="4dp"
@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/scoreTextView"
         android:layout_width="100dp"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
@@ -36,8 +36,8 @@
 
     <TextView
         android:id="@+id/questionTextView"
-        android:layout_width="173dp"
-        android:layout_height="49dp"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
         android:layout_marginTop="13dp"
@@ -57,7 +57,7 @@
         android:layout_height="240dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:columnCount="2"
@@ -66,44 +66,79 @@
         app:layout_constraintTop_toBottomOf="@+id/timerTextView"
         app:rowCount="2">
 
-        <TextView
+        <Button
             android:id="@+id/option1TextView"
             android:layout_width="186dp"
             android:layout_height="118dp"
             android:background="@android:color/holo_purple"
             android:gravity="center"
             android:text="1"
+            android:textColor="@android:color/background_dark"
             android:textSize="60sp"
             android:textStyle="bold" />
 
-        <TextView
+        <Button
             android:id="@+id/option2TextView"
             android:layout_width="186dp"
             android:layout_height="118dp"
             android:background="@android:color/holo_green_light"
             android:gravity="center"
             android:text="2"
+            android:textColor="@android:color/background_dark"
             android:textSize="60sp"
             android:textStyle="bold" />
 
-        <TextView
+        <Button
             android:id="@+id/option3TextView"
             android:layout_width="186dp"
             android:layout_height="118dp"
             android:background="?android:attr/colorAccent"
             android:gravity="center"
             android:text="3"
+            android:textColor="@android:color/background_dark"
             android:textSize="60sp"
             android:textStyle="bold" />
 
-        <TextView
+        <Button
             android:id="@+id/option4TextView"
             android:layout_width="186dp"
             android:layout_height="118dp"
             android:background="@android:color/holo_blue_dark"
             android:gravity="center"
             android:text="4"
+            android:textColor="@android:color/background_dark"
             android:textSize="60sp"
             android:textStyle="bold" />
     </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="224dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:gravity="center"
+        android:text="Correct"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:onClick="startGame"
+        android:text="Play Again!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
 </android.support.constraint.ConstraintLayout>
