@@ -50,9 +50,8 @@ public class MainActivity extends AppCompatActivity {
         int num1 = rand.nextInt((max - min) + 1) + min;
         int num2 = rand.nextInt((max - min) + 1) + min;
         currentAnswer = num1 + num2;
-        Log.i("Answer", Integer.toString(currentAnswer));
 
-        questionTextView.setText(Integer.toString(num1) + " + " + Integer.toString(num2) + " = " + Integer.toString(currentAnswer));
+        questionTextView.setText(Integer.toString(num1) + " + " + Integer.toString(num2));
 
         int correctOption = rand.nextInt(4);
 
